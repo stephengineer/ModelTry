@@ -1,14 +1,16 @@
+import argparse
+import ssl
+
 import numpy as np
 import torch
 import torchvision
-import argparse
 from torch import nn
 from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
 from torchvision.transforms import InterpolationMode
+
 from alexnet_try import AlexNet
-import ssl
 
 # 全局取消证书验证，否则在下载数据集时可能会出现证书验证问题报错
 ssl._create_default_https_context = ssl._create_unverified_context
