@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
 from torchvision.transforms import InterpolationMode
-from alexnet import AlexNet
+from alexnet_try import AlexNet
 import ssl
  
 # 全局取消证书验证，否则在下载数据集时可能会出现证书验证问题报错
