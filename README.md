@@ -1,10 +1,10 @@
 # ModelTry
 
-A comprehensive machine learning experimentation project featuring implementations of various neural network architectures and deep learning components.
+A comprehensive deep learning experimentation repository focused on Large Language Model (LLM) implementations, transformer architectures, and neural network components for hands-on learning and research.
 
 ## 🚀 Project Overview
 
-ModelTry is a learning and experimentation repository that contains implementations of different neural network architectures, from classic computer vision models to modern transformer components. This project serves as a hands-on exploration of deep learning concepts and their practical implementations.
+ModelTry is an evolving repository dedicated to implementing and experimenting with various deep learning architectures, with a primary focus on Large Language Models (LLMs) and transformer-based systems. This project serves as a comprehensive learning resource for understanding modern AI architectures through practical implementations, from foundational components to complete model architectures.
 
 ## 📁 Project Structure
 
@@ -22,28 +22,40 @@ ModelTry/
 ├── dataset/                # Dataset storage directory
 ├── DeepSeek-V2/            # DeepSeek V2 model implementation
 ├── DeepSeek-V3/            # DeepSeek V3 model implementation
+├── [Future LLM Models]/    # Additional LLM implementations (coming soon)
+├── [Training Scripts]/     # Model training and fine-tuning scripts
+├── [Evaluation Tools]/     # Model evaluation and benchmarking
 └── README.md               # This file
 ```
 
+> **Note**: This repository is actively expanding with new LLM implementations, training scripts, and evaluation tools. The structure will grow to include more comprehensive language model architectures and utilities.
+
 ## 🧠 Implemented Models & Components
 
-### Computer Vision
+### Large Language Models (LLMs)
+- **DeepSeek V2 & V3**: Modern MoE (Mixture of Experts) language models
+  - Complete model architecture
+  - Configuration management
+  - Tokenizer integration
+- **LLaMA Components**: Decoder layer and attention mechanisms
+- **[Future LLMs]**: Additional language model implementations planned
+
+### Transformer Architecture Components
+- **Multi-Head Attention**: Scaled dot-product attention with visualization
+- **Rotary Position Embedding (RoPE)**: Advanced positional encoding
+- **RMS Normalization**: Alternative to Layer Normalization
+- **LLaMA Decoder Layer**: Complete transformer decoder implementation
+- **Attention Mechanisms**: Various attention implementations and optimizations
+
+### Computer Vision (Legacy/Reference)
 - **AlexNet**: Classic CNN architecture for image classification
   - CIFAR-10 dataset training
   - TensorBoard logging
   - Configurable hyperparameters
 
-### Transformer Components
-- **Multi-Head Attention**: Scaled dot-product attention with visualization
-- **Rotary Position Embedding (RoPE)**: Advanced positional encoding
-- **RMS Normalization**: Alternative to Layer Normalization
-- **LLaMA Decoder Layer**: Complete transformer decoder implementation
-
-### Language Models
-- **DeepSeek V2 & V3**: Modern MoE (Mixture of Experts) language models
-  - Complete model architecture
-  - Configuration management
-  - Tokenizer integration
+### Tokenization & Preprocessing
+- **SentencePiece**: Tokenizer implementation and experiments
+- **Text Processing**: Various text preprocessing utilities
 
 ## 🛠️ Dependencies
 
@@ -138,39 +150,55 @@ The project includes comprehensive monitoring capabilities:
 
 This project is ideal for:
 
-- **Learning Deep Learning**: Hands-on implementation of key concepts
+- **LLM Research & Development**: Implementing and experimenting with language models
+- **Transformer Architecture Learning**: Understanding attention mechanisms and positional encodings
+- **Model Fine-tuning**: Training and adapting pre-trained language models
+- **Educational Purposes**: Hands-on learning of modern AI architectures
 - **Research Experiments**: Testing new architectures and techniques
-- **Educational Purposes**: Understanding how different components work
-- **Model Development**: Building custom neural network architectures
+- **Custom Model Development**: Building specialized language models
+- **Benchmarking & Evaluation**: Comparing different model implementations
 
-## 🔧 Customization
+## 🔧 Customization & Extension
 
-### Adding New Models
-1. Create a new Python file for your model
-2. Implement the model class inheriting from `nn.Module`
-3. Add training/testing scripts as needed
-4. Update this README with your additions
+### Adding New LLM Models
+1. Create a new directory for your model (e.g., `llama-v2/`, `gpt-variant/`)
+2. Implement the model architecture with proper configuration management
+3. Add training, fine-tuning, and inference scripts
+4. Include evaluation and benchmarking tools
+5. Update this README with your additions
+
+### Adding New Components
+1. Create a new Python file for your component
+2. Implement the class inheriting from `nn.Module`
+3. Add comprehensive tests and examples
+4. Document usage and parameters
 
 ### Modifying Existing Models
 - All models are modular and easily extensible
 - Configuration parameters are clearly documented
 - Training scripts support various hyperparameters
+- Easy to adapt for different use cases and datasets
 
 ## 📚 Learning Resources
 
 This project implements concepts from:
-- AlexNet paper: "ImageNet Classification with Deep Convolutional Neural Networks"
-- Attention mechanisms from "Attention Is All You Need"
-- RoPE from "RoFormer: Enhanced Transformer with Rotary Position Embedding"
-- LLaMA architecture and DeepSeek models
+- **Attention Mechanisms**: "Attention Is All You Need" (Vaswani et al.)
+- **RoPE**: "RoFormer: Enhanced Transformer with Rotary Position Embedding"
+- **LLaMA Architecture**: "LLaMA: Open and Efficient Foundation Language Models"
+- **DeepSeek Models**: DeepSeek-V2 and V3 technical reports
+- **MoE Architectures**: Mixture of Experts implementations
+- **Classic CNNs**: AlexNet and computer vision foundations
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to:
-- Add new model implementations
-- Improve existing code
-- Add more comprehensive tests
-- Enhance documentation
+- **Add new LLM implementations** (GPT variants, LLaMA variants, etc.)
+- **Implement new transformer components** (attention mechanisms, normalization layers)
+- **Add training and fine-tuning scripts** for different models
+- **Create evaluation and benchmarking tools**
+- **Improve existing implementations** with optimizations
+- **Add comprehensive tests and documentation**
+- **Share interesting experiments and results**
 
 ## 📄 License
 
@@ -185,6 +213,19 @@ If you encounter any issues or have questions:
 
 ---
 
+## 🚀 Roadmap
+
+This repository is continuously evolving. Planned additions include:
+
+- **More LLM Architectures**: GPT variants, PaLM, T5, and other major language models
+- **Training Infrastructure**: Distributed training scripts and utilities
+- **Evaluation Suite**: Comprehensive benchmarking tools and metrics
+- **Fine-tuning Tools**: LoRA, QLoRA, and other parameter-efficient methods
+- **Optimization Techniques**: Quantization, pruning, and inference optimizations
+- **Dataset Utilities**: Data loading, preprocessing, and augmentation tools
+
+---
+
 **Happy Learning! 🎓**
 
-This project is designed to be a comprehensive learning resource for deep learning practitioners at all levels.
+This project is designed to be a comprehensive learning resource for LLM practitioners, researchers, and students at all levels.
