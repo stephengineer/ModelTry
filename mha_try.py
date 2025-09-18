@@ -111,7 +111,7 @@ def test_multi_head_attention():
             xticklabels=[f"K{i}" for i in range(seq_len)],
             yticklabels=[f"Q{i}" for i in range(seq_len)],
         )
-        plt.title(f"Head {head+1}")
+        plt.title(f"Head {head + 1}")
     plt.tight_layout()
     plt.show()
 
